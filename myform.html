@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>My Form</title>
+
+<meta charset="utf-8">
+
+<style>
+
+form { 
+
+font-family:Calibri, Arial;
+font-size:90%;
+padding: 10px;
+margin-top:10px; }
+
+label { display: block; }
+
+
+
+input{
+margin:10px;
+}
+
+legend, label {font-weight: bold; }
+
+fieldset { width: 480px;
+margin: 10px 0}
+
+select { display: block;
+margin: 10px; }
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Enter your credentials</h1>
+
+<form method="get">
+
+<label for="user">Username:</label>
+
+<input type="text" name="user" id="user" maxlength="30">
+
+
+
+<fieldset><legend>Shipping Address:</legend>
+
+<label>Address Line 1<input type="text" name="Address1" id="Address1"></label>
+
+<label>Address Line 2<input type="text" name="Address2" id="Address2" ></label>
+
+<label>City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="City" id="City"></label>
+
+<label>Province&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Province" id="Province"></label>
+
+<label>Postal Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="PostalCode" id="PostalCode"></label>
+
+</fieldset>
+
+
+<legend>Select your favourite month of the year:</legend>
+
+<label><input type="radio" value="January"
+name="FavouriteMonth" id="FavJanuary">January</label>
+
+<label><input type="radio" name="FavouriteMonth" value="February"
+id="FavFebruary"> February</label>
+
+<label><input type="radio" name="FavouriteMonth" value="March"
+id="FavMarch"> March</label>
+
+<label><input type="radio" name="FavouriteMonth" value="April"
+id="FavApril"> April</label>
+
+<label><input type="radio" name="FavMonth" value="May"
+id="May"> May</label>
+
+<label><input type="radio" name="FavMonth" value="June"
+id="June"> June</label>
+
+<label><input type="radio" name="FavMonth" value="July"
+id="July"> July</label>
+
+<label><input type="radio" name="FavMonth" value="August"
+id="August"> August</label>
+
+<label><input type="radio" name="FavMonth" value="September"
+id="September"> September</label>
+
+<label><input type="radio" name="FavMonth" value="October"
+id="October"> October</label>
+
+<label><input type="radio" name="FavMonth" value="November"
+id="November"> November</label>
+
+<label><input type="radio" name="FavMonth" value="December"
+id="December"> December</label>
+
+
+<label for="sites">Choose your Favorite Social Networking site</label>
+
+<select size="1" name="favoriteSite" id="favoriteSite">
+
+<option>Choose your Favorite Social Networking site</option>
+
+<option value="Facebook">Facebook</option>
+
+<option value="Snapchat">Snapchat</option>
+
+<option value="Instagram">Instagram</option>
+</select>
+
+<input type="hidden" name="uerid" id="userid">
+
+<legend>Enter Password:</legend> <input type="password" name="pword" id="pword" maxlength="15">
+
+<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+
+
+<input type="submit" value="Submit"> <input type="reset">
+
+</form>
+
+</body>
+</html>

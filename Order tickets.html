@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label { float: left;
+	    width: 150px; 
+	    clear: left;
+	    text-align: right; 
+	    padding-right: 10px;
+	    margin-top: 10px; }
+</style>
+<body>
+<h2>JavaScript Can Order Tickets</h2>
+
+<p>Please place your order below</p>
+<form name="tickets">
+<label for "numb">Number of tickets: </label>
+<input type = "number" name = "numb" id="numb"> <br> <br>
+<label for "unit">Cost of ticket: </label>
+<input type = "number" name = "unit" id="unit"> <br> <br>
+<label for "cost">Your cost for tickets </label>
+<input type = "number" name = "cost" id="cost" readonly> <br> <br>
+<p id = "demo"> </p>
+<button type="button" onclick="myFunction()">Submit</button>
+</form>
+<script>
+function myFunction() {
+    var numb, unit, cost;
+
+    // Get the value of the input field with name="numb"
+    numb = document.tickets.numb.value;
+	 // Get the value of the input field with name="unit"
+     unit = document.tickets.unit.value;
+   
+   // Calculate cost
+   cost = numb * unit;
+   
+    document.tickets.cost.value = cost.toFixed(2); 
+}
+</script>
+
+</body>
+</html> 

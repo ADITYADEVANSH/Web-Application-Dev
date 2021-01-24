@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Yoga Survey</title>
+
+<meta charset="utf-8">
+
+<style>
+
+form { font-family:Arial;
+
+font-size:90%;
+
+padding-left: 5px;
+
+margin-top:10px; }
+
+label { display: block; }
+
+legend, label {font-weight: bold; }
+
+fieldset { width: 480px;
+
+margin: 10px 0}
+
+textarea, select { display: block;
+
+margin-bottom: 10px; }
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Yoga Survey</h1>
+
+<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+
+<label for="name">Name:</label>
+
+<input type="text" name="name" id="name">
+
+<label for="email">E-Mail: </label>
+
+<input type="text" name="email" id="email">
+
+<fieldset><legend>Select Your Favorite Types of Yoga:</legend>
+
+<label><input type="checkbox" name="GHY" id="GHY" value="Yes"> Gentle Hatha Yoga</label>
+
+<label><input type="checkbox" name="VY" id="VY" value="Yes"> Vinyasa Yoga</label>
+
+<label><input type="checkbox" name="RY" id="RY" value="Yes"> Restorative Yoga</label>
+
+<label><input type="checkbox" name="Other" id="Other" value="Yes"> Other</label>
+
+</fieldset>
+
+<fieldset><legend>Select how often you do yoga:</legend>
+
+<label><input type="radio" value="Weekly" checked="checked"
+
+name="Frequency" id="Week"> Weekly</label>
+
+<label><input type="radio" name="Frequency" value="Daily"
+
+id="Daily"> Daily</label>
+
+<label><input type="radio" name="Frequency" value="Monthly"
+
+id="Monthly"> Monthly</label>
+
+<label><input type="radio" name="Frequency" value="Never"
+
+id="PurchaseNever"> Never </label>
+
+</fieldset>
+
+<label for="locations">Select the locations you go to do yoga:</label>
+
+<select size="3" name="locations" multiple="multiple" id="locations" >
+
+<option value="None selected" selected="selected">Select one or more locations</option>
+
+<option value="At home">At home</option>
+
+<option value="At Studio">At Studio</option>
+
+<option value="In Park">In Park</option>
+
+</select>
+
+<label for="role">What role does yoga play in your life?</label>
+
+<textarea rows="3" name="role" id="role" cols="60"></textarea>
+
+<input type="submit" value="Submit"> <input type="reset">
+
+</form>
+
+</body>
+
+</html>
